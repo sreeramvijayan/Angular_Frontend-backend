@@ -1,0 +1,9 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+    /* top: 10%; */
+    margin-top: 10px;
+}
+.send{
+    cursor: pointer;
+}

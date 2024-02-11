@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="form">
+        <h2>Edit product</h2>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input type="text" class="form-control" [(ngModel)]="network.name"
+                    [ngModelOptions]="{ standalone: true }" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">version</label>
+                <input type="text" class="form-control" [(ngModel)]="network.version"
+                    [ngModelOptions]="{ standalone: true }" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword2" class="form-label">Brand</label>
+                <input type="text" class="form-control" [(ngModel)]="network.brand"
+                    [ngModelOptions]="{ standalone: true }" id="exampleInputPassword2">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" [ngModelOptions]="{ standalone: true }"
+                    [(ngModel)]="network.description" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="editsave()">Submit</button>
+        </form>
+    </div>
+</div>
